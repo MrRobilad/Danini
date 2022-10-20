@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+body{
+  background: linear-gradient(#6f54d1, #2a3137);
+  padding:20px;
+}
+
+.container{
+  max-width: 1800px;
+  margin:100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap:20px;
+}
+
+.container .main-video-container{
+  flex:1 1 700px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  background-color: #fff;
+  padding:15px;
+}
+
+.container .main-video-container h4{
+  margin-top: 10px;
+  flex:1 1 900px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.4);
+  background-color: #fff;
+  padding:15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container .main-video-container .main-video{
+  margin-bottom: 7px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container .main-video-container .main-vid-title{
+  font-size: 20px;
+  color:#444;
+}
+
+.container .video-list-container{
+  flex:1 1 350px;
+  height: 761px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  background-color: #fff;
+  padding:15px;
+}
+
+.container .video-list-container::-webkit-scrollbar{
+  width: 10px;
+}
+
+.container .video-list-container::-webkit-scrollbar-track{
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.container .video-list-container::-webkit-scrollbar-thumb{
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.container .video-list-container .list{
+  display: flex;
+  align-items: center;
+  gap:15px;
+  padding:10px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.container .video-list-container .list:last-child{
+  margin-bottom: 0;
+}
+
+.container .video-list-container .list.active{
+  background-color: #444;
+}
+
+.container .video-list-container .list.active .list-title{
+  color:#fff;
+}
+
+.container .video-list-container .list .list-video{
+  width: 100px;
+  border-radius: 5px;
+}
+
+.container .video-list-container .list .list-title{
+  font-size: 17px;
+  color:#444;
+}
+
+
+/* footer */
+
+footer {
+  padding: 4vw;
+  background-color: #101C32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .footer-col {
+  padding-bottom: 40px;
+}
+
+footer h3 {
+  color: rgb(241, 240, 245);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer li:hover {
+  color: rgb(241, 240, 245);
+}
+
+footer p {
+  color: #7b838a;
+}
+
+footer .subscribe {
+  margin-top: 20px;
+}
+
+footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #334F6C;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .subscribe a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+footer .subscribe a.yellow {
+  color: #2c2c2c;
+  background: #FDC93B;
+  transition: 0.3s ease;
+}
+
+
+footer .subscribe a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background: #fff;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer .copyright p{
+  color: #fff;
+}
+
+
+footer .copyright .pro-links {
+  margin-top: 0px;
+}
+
+footer .copyright .pro-links i{
+  background-color: #5f7185;
+  color: #fff;
+}
+
+footer .copyright .pro-links i:hover{
+  background-color: #FDC93B;
+  color: #2c2c2c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+
+  .container{
+     margin:0;
+  }
+
+}
+
+@media (max-width:450px){
+
+  .container .main-video-container .main-vid-title{
+     font-size: 15px;
+     text-align: center;
+  }
+
+  .container .video-list-container .list{
+     flex-flow: column;
+     gap:10px;
+  }
+
+  .container .video-list-container .list .list-video{
+     width: 100%;
+  }
+
+  .container .video-list-container .list .list-title{
+     font-size: 15px;
+     text-align: center;
+  }
+}

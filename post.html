@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+    <title>Danini</title>
+
+    <script src="https://kit.fontawesome.com/d98c032db7.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav>
+      <img src="images/danini-logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fa-solid fa-xmark"></i>
+          <li>
+            <a class="bilanguage" data-mk="Почетна" data-en="Home" href="#"></a>
+          </li>
+          <li>
+            <a
+              class="bilanguage"
+              data-mk="За нас"
+              data-en="About"
+              href="about.html"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="active bilanguage"
+              data-mk="Блог"
+              data-en="Blog"
+              href="blog.html"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="bilanguage"
+              data-mk="Курсеви"
+              data-en="Courses"
+              href="courses.html"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="bilanguage"
+              data-mk="Контакт"
+              data-en="Contact"
+              href="contact.html"
+            ></a>
+          </li>
+          <button
+            type="button"
+            class="bilanguage btttn"
+            onclick="changelang()"
+            data-en="EN"
+            data-mk="MK"
+          ></button>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/b1.jpg" alt="" />
+          <h3 class="bilanguage" data-mk="Наслов" data-en="Subtitle"></h3>
+          <p
+            class="bilanguage"
+            data-mk="Можете да промените предпочитанията си по всяко време, като щракнете върху „Настройки за поверителност“ в долния колонтитул в долната част на страницата.
+
+            Вярваме, че надеждната здравна информация трябва да бъде безплатна за всички и разчитаме на рекламата, за да направим това възможно. Предоставянето на авторитетни преживявания, прегледани от лекари и други здравни и уелнес специалисти, е скъпо, но е безценна услуга. Ние събираме и обработваме по сигурен начин вашите лични данни, за да предоставим подходящо изживяване и да подпомогнем нашия бизнес, затова ви молим да разрешите бисквитки, за да получите достъп до цялото ни съдържание и функции.
+            
+            Ние и нашите партньори обработваме вашите лични данни по следните начини:
+            
+            бисквитки или уникални идентификатори, за съхраняване и/или достъп до информация на вашето устройство
+            персонализирани реклами и съдържание
+            измерване на реклами и съдържание
+            прозрения за аудиторията и разработване на продукти
+            гарантиране на сигурност, предотвратяване на измами и отстраняване на грешки
+            предоставя технически реклами или съдържание"
+            data-en="You can change your preferences at any time by clicking on “Privacy Settings” in the footer at the bottom of the page.
+
+          We believe that trustworthy health information should be free to everyone and we rely on advertising to make that possible. Providing authoritative experiences that are reviewed by physicians and other health and wellness professionals is expensive, but it’s an invaluable service. We collect and securely process your personal data to deliver a relevant experience and support our business, so we ask that you allow cookies in order to access all of our content and features.
+          
+          We and our partners process your personal data in the following ways:
+          
+          cookies or unique IDs, for storing and/or accessing information on your device
+          personalized ads and content
+          ad and content measurement
+          audience insights and product development
+          ensuring security, preventing fraud, and debug
+          technically deliver ads or content"
+          ></p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+
+    <script src="javas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <title>Данини</title>
+  <script src="https://kit.fontawesome.com/d98c032db7.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+
+  <nav>
+    <img src="images/danini-logo.png">
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fa-solid fa-xmark"></i>
+        <li><a class="active bilanguage" data-mk="Почетна" data-en="Home" href="#"></a></li>
+        <li><a class="bilanguage" data-mk="За нас" data-en="About" href="about.html"></a></li>
+        <li><a class="bilanguage" data-mk="Блог" data-en="Blog" href="blog.html"></a></li>
+        <li><a class="bilanguage" data-mk="Курсеви" data-en="Courses" href="courses.html"></a></li>
+        <li><a class="bilanguage" data-mk="Контакт" data-en="Contact" href="contact.html"></a></li>
+        <button type="button" class='bilanguage btttn' onclick='changelang()' data-en='EN' data-mk="MK"></button>
+      </ul>
+      <img id="menu-btn" src="images/menu.png" alt="">
+    </div>
+  </nav>
+
+  <!-- Home  -->
+
+  <section id="home">
+    <h2 class="bilanguage" data-mk="Данини - Природна козметика" data-en="Danini - Natural cosmetics"></h2>
+      <p class="bilanguage" data-mk="Вашето знаење е нашата дестинација!" data-en="Your knowledge is our destini" ></p>
+      <div class="btn">
+        <a class="blue bilanguage" data-mk="Научи повеќе" data-en="Learn more" href="about.html"></a>
+        <a class="yellow bilanguage" data-mk="Посети курсеви" data-en="More courses" href="courses.html"></a>
+      </div> 
+      
+  </section>
+
+
+
+  <!-- Courses -->
+
+  <section id="course">
+    <h1 class="bilanguage" data-mk="Нашите популарни курсеви" data-en="Our popular courses"></h1>
+    <p class="bilanguage" data-mk="Се што сакате да знаете ќе го имате со нашите курсеви" data-en="Everything you want to know is in our courses"></p>
+    <div class="course-box">
+
+
+      <div class="courses">
+        <img src="images/Intro.jpg" alt="">
+        <div class="details">
+           <span class="bilanguage" data-mk="Актуализирано 09.09.2022" data-en="Updated 09.09.2022"></span>
+           <h6 class="bilanguage" data-mk="Процес на изработка на сапун" data-en="Handmade preparation soup"></h6>
+             <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(239)</span>
+             </div>
+        </div>
+        <div class="bilanguage cost" data-en="€19.99" data-mk="1200МКД"></div>
+      </div>
+
+      <div class="courses">
+        <img src="images/howto.jpg" alt="">
+        <div class="details">
+           <span class="bilanguage" data-mk="Актуализирано 12.04.2022" data-en="Updated 12.04.2022"></span>
+           <h6 class="bilanguage" data-mk="Процес на формирање" data-en="Formation process"></h6>
+             <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(12.565)</span>
+             </div>
+        </div>
+        <div class="bilanguage cost" data-en="€69.99" data-mk="4200МКД"></div>
+      </div>
+
+      
+     
+    </div>
+  </section>
+
+  
+  <!-- Profiles -->
+
+  <section id="experts">
+    <h1 class="bilanguage" data-mk="Вашите ментори" data-en="Mentors"></h1>
+    <p class="bilanguage" data-mk="Тука сме за да ви помогнеме за вашиот успех" data-en="We are here to help you achive your goals"></p>
+    <div class="expert-box">
+      <div class="profile">
+        <img class="noko" src="images/pro1.webp" alt="">
+        <h6 class="bilanguage" data-en="Daniela" data-mk="Даниела"></h6>
+        <p class="bilanguage" data-mk="Доктор" data-en="Doc.Prof.Medicine"></p>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="https://danini-cosmetics.com/" class="fa fa-google"></a>
+            </div>          
+        </div>
+      
+    
+  </section>
+
+
+  <footer>
+    <div class="footer-col">
+      <h3 class="bilanguage" data-mk="Работно време:" data-en="Working hours"></h3>
+      <li class="bilanguage" data-mk="Понеделник-Петок" data-en="Mon-Fri"></li>
+      <li>08:00 - 18:00</li>
+    </div>
+   
+    <div class="footer-col">
+      <h3 class="bilanguage" data-mk="Адреса" data-en="Address"></h3>
+      <li class="bilanguage" data-mk="Александар Македонски  бр. 40 
+        Македонска Каменица,
+        Македонија" data-en="Aleksandar Makedonski No. 40  
+        Makedonska Kamenica,
+        Macedonia"></li>
+      
+    </div>
+   
+    
+    
+    
+  
+    <div class="copyright">
+    <p>Copyright ©2022 All rights reserved |</p>
+   </div>
+  </footer>
+  
+  
+  <script>
+    $('#menu-btn').click(function() {
+      $('nav .navigation ul').addClass('active') 
+    });
+    $('#menu-close').click(function() {
+      $('nav .navigation ul').removeClass('active') 
+    });
+  </script>
+
+<script src="javas.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

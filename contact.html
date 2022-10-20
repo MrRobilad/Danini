@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <title>Данини</title>
+  
+  <script src="https://kit.fontawesome.com/d98c032db7.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+
+  <nav>
+    <img src="images/danini-logo.png" alt="">
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fa-solid fa-xmark"></i>
+        <li><a class="bilanguage" data-mk="Почетна" data-en="Home" href="index.html"></a></li>
+        <li><a class=" bilanguage" data-mk="За нас" data-en="About" href="about.html"></a></li>
+        <li><a class="bilanguage" data-mk="Блог" data-en="Blog" href="blog.html"></a></li>
+        <li><a class=" bilanguage" data-mk="Курсеви" data-en="Courses" href="courses.html"></a></li>
+        <li><a class="active bilanguage" data-mk="Контакт" data-en="Contact" href="contact.html"></a></li>
+        <button type="button" class='bilanguage btttn' onclick='changelang()' data-en='EN' data-mk="MK"></button>
+      </ul>
+      <img id="menu-btn" src="images/menu.png" >
+    </div>
+  </nav>
+
+  <!-- Home  -->
+
+  <section id="contact-home">
+      <h2 class="bilanguage" data-mk="Контактирајте не |" data-en="Contact us |"></h2>
+  </section>
+
+  <section id="contact">
+    <div class="getin">
+      <h2 class="bilanguage" data-mk="Поврзете се со нас" data-en="Connect with us"></h2>
+      <p class="bilanguage" data-mk="Ви треба помош? Пополнете ја формата и ќе ви вратиме во најбрз можен момент" data-en="You need help? Fill the form and contact us"></p>
+
+      <div class="getin-details">
+        <h3 class="bilanguage" data-mk="Локација" data-en="Location"></h3>
+        <div>
+          <i class="fas fa-home get"></i>
+          <p class="bilanguage" data-mk="" data-en="">Александар Македонски бр. 40
+            Македонска Каменица,
+            Македонија</p>
+        </div>
+       
+        <h3 class="bilanguage" data-mk="Телефон" data-en="Phone"></h3>
+        <div>
+          <i class="fas fa-phone-alt get"></i>
+          <p class="bilanguage" data-mk="" data-en="">+389 71 751 135 <br>
+            +389 33 444 244 </p>
+        </div>
+      
+        <h3 class="bilanguage" data-mk="Поддршка" data-en="Email"></h3>
+        <div>
+          <i class="fas fa-envelope-open-text get"></i>
+          <p class="bilanguage" data-mk="" data-en="">daniela@danini-cosmetics.com <br>
+            naracki@danini-cosmetics.com  </p>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <h4 class="bilanguage" data-mk="Поврзи се" data-en="Write us"></h4>
+      <div class="form-row">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+      </div>
+      <div class="form-col">
+        <input type="text" placeholder="Subject">
+      </div>
+      <div class="form-col">
+        <textarea class="bilanguage" data-mk="" data-en="" name="" id="" cols="30" rows="8">How can we help you?</textarea>
+      </div>
+      <div class="form-col">
+        <button class="bilanguage" data-mk="Испрати порака" data-en="Send message"></button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.0135146768557!2d22.58489325139761!3d42.0214424791089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1355876eb300beb3%3A0x78092feaf44a7cc5!2zRGFuaW5pIE5hdHVyYWwgQ29zbWV0aWNzLCDQlNCw0L3QuNC90Lgg0J_RgNC40YDQvtC00L3QsCDQmtC-0LfQvNC10YLQuNC60LA!5e0!3m2!1sen!2smk!4v1661809984979!5m2!1sen!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  
+  <footer>
+    <div class="footer-col">
+      <h3 class="bilanguage" data-mk="Работно време:" data-en="Working Hours"></h3>
+      <li class="bilanguage" data-mk="Понеделник-Петок" data-en="Monday-Friday"></li>
+      <li class="bilanguage" data-mk="08:00 - 18:00" data-en="08:00 - 18:00"></li>
+    </div>
+   
+    <div class="footer-col">
+      <h3 class="bilanguage" data-mk="Адреса" data-en="Address"></h3>
+      <li class="bilanguage" data-mk="Александар Македонски  бр. 40 
+        Македонска Каменица,
+        Македонија" data-en="Aleksandar Makedonski No. 40 
+        Makedonska Kamenica,
+        Macedonia"></li>
+      
+    </div>
+   
+    <div class="copyright">
+    <p>Copyright ©2022 All rights reserved |</p>
+    <div class="pro-links">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+   </div>
+  </footer>
+  
+  <script>
+    $('#menu-btn').click(function() {
+      $('nav .navigation ul').addClass('active') 
+    });
+    $('#menu-close').click(function() {
+      $('nav .navigation ul').removeClass('active') 
+    });
+  </script>
+
+<script src="javas.js"></script>
+
+</body>
+</html>

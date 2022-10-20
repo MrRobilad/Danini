@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <title>Данини</title>
+  
+  <script src="https://kit.fontawesome.com/d98c032db7.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+
+  <nav>
+    <img src="images/danini-logo.png" alt="">
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fa-solid fa-xmark"></i>
+        <li><a class="bilanguage" data-mk="Почетна" data-en="Home" href="index.html"></a></li>
+        <li><a class=" bilanguage" data-mk="За нас" data-en="About" href="about.html"></a></li>
+        <li><a class="bilanguage" data-mk="Блог" data-en="Blog" href="blog.html"></a></li>
+        <li><a class="active bilanguage" data-mk="Курсеви" data-en="Courses" href="courses.html"></a></li>
+        <li><a class="bilanguage" data-mk="Контакт" data-en="Contact" href="contact.html"></a></li>
+        <button type="button" class='bilanguage btttn' onclick='changelang()' data-en='EN' data-mk="MK"></button>
+      </ul>
+      <img id="menu-btn" src="images/menu.png" alt="">
+    </div>
+  </nav>
+
+  <!-- Home  -->
+
+  <section id="about-home">
+      <h2 class="bilanguage" data-mk="Зачлени се во нашиот курс и унапреди ги  твоите вештини |" data-en="Enroll in one of our courses and be better every day |"></h2>
+  </section>
+
+  <section id="course-inner">
+    <div class="overview">
+      <img class="course-img" src="images/Intro.jpg" alt="">
+      <div class="course-head">
+        <div class="c-name">
+          <h2 class="bilanguage" data-mk="Процес на изработка на сапун" data-en="Proccess of making"></h2>
+          <p class="bilanguage" data-mk="Од ниво бегинер до ниво ехперт и курс што ќе сакате да го слушате повторно и повторно" data-en="From beginner to advanced."></p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           
+        </div>
+        <span>€19.99</span>
+      </div>
+      <h3 class="bilanguage" data-mk="Инструктор" data-en="Instructor"></h3>
+      <div class="tutor">
+        <img src="images/pro1.webp" alt="">
+        <div class="tutor-det">
+          <h5 class="bilanguage" data-mk="Даниела" data-en="Daniela"></h5>
+          <p class="bilanguage" data-mk="Доктор Биохемичар" data-en="Doctor"></p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="bilanguage" data-mk="Кратка анализа на курсот" data-en="What you will learn"></h3>
+      <p class="bilanguage" data-mk="кратка анализа" data-en="Analyze..."></p>
+        <hr>
+        <h3 class="bilanguage" data-mk="Што ќе научите од курсот" data-en="What you will learn"></h3>
+        <div class="learn">
+          <p><i class="far fa-check-circle"></i>----</p>
+          <p><i class="far fa-check-circle"></i>----</p>
+          <p><i class="far fa-check-circle"></i>----</p>
+          <p><i class="far fa-check-circle"></i>----</p>
+          <p><i class="far fa-check-circle"></i>----</p>
+          <p><i class="far fa-check-circle"></i>----</p>
+        </div>
+    </div>
+
+    <div class="enroll">
+      <h3 class="bilanguage" data-mk="Во курсот е вклучено:" data-en="Included in course"></h3>
+      <p class="bilanguage" data-mk="2 часа видео" data-en="2 hours video"><i class="far fa-video"></i></p>
+      <p class="bilanguage" data-mk="25 артикли" data-en="25 articles"><i class="far fa-newspaper"></i></p>
+      
+      <p class="bilanguage" data-mk="Еднаш го купуваш следиш го секогаш" data-en="Lifetime access"><i class="far fa-infinity"></i></p>
+      <p class="bilanguage" data-mk="Достапно на мобилен и Телевизор" data-en="Responsive on Tv's and Phone's"><i class="far fa-mobile-alt"></i></p>
+      <p class="bilanguage" data-mk="Задачи" data-en="Tasks"><i class="far fa-paperclip"></i></p>
+      <p class="bilanguage" data-mk="Сертификат за успешно завршен курс" data-en="Certificate of completition"><i class="fa-solid fa-trophy"></i></p>
+      <div class="enroll-btn">
+        <a class="blue bilanguage" data-mk="Пријави се веднаш" data-en="Enroll"  href="./creditcard/indexcredit.html"></a>
+      </div>
+
+    </div>
+  </section>
+  
+  
+  
+  <script>
+    $('#menu-btn').click(function() {
+      $('nav .navigation ul').addClass('active') 
+    });
+    $('#menu-close').click(function() {
+      $('nav .navigation ul').removeClass('active') 
+    });
+  </script>
+
+  <script src="javas.js"></script>
+
+</body>
+</html>
